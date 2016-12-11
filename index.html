@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<title>Dijkstra算法实验</title>
+</head>
+<body>
+	<div class="spgraph" id="graph"></div>
+	<p>
+		设置节点数 : <input type="text" id="numberOfNodes" style="width: 30px;" name="sp-nodes" value="5"/>
+		<input type="submit" value=" 设置权值 " 
+			onclick="ShortestPathUtils.makeTable(document.getElementById('numberOfNodes').value);" />
+	</p>
+
+	<div id="distances"></div>
+	<div id="results"></div>
+	<div id="graph" class="spgraph" ></div>
+
+	<div id="distances2"></div>
+	<div id="results2"></div>
+	<div id="graph2" class="spgraph" ></div>
+
+
+	<link href="stylesheets/shortest-path.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="javascripts/d3.v3.min.js"></script>
+	<script type="text/javascript" src="javascripts/ShortestPathCalculator.js"></script>
+	<script type="text/javascript" src="javascripts/ShortestPathUtils.js"></script>
+	<script type="text/javascript">
+
+
+		document.getElementById('results').innerHTML = result;
+
+		sp1.drawGraph('graph');
+
+	</script>
+</body>
+</html>
